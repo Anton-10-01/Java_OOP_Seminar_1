@@ -2,18 +2,22 @@ package Java.Java_OOP_Seminar_1.HomeWork;
 
 import java.util.ArrayList;
 
-public class Basket extends Product{
-    ArrayList<String> products;
+public class Basket {
+    private ArrayList<Product> products;
 
     public Basket() {
         this.products = new ArrayList<>();
     }
 
-    public ArrayList<String> getProducts() {
+    public ArrayList<Product> getProducts() {
         return products;
     }
 
-    public void addProducts (String product) {
+    public void addProducts (Product product) {
         products.add(product);
+    }
+
+    public void removeProducts(Product product) {
+        products.remove(product);
     }
 }

@@ -3,8 +3,8 @@ package Java.Java_OOP_Seminar_1.HomeWork;
 import java.util.ArrayList;
 
 public class Category {
-    protected String nameCategory;
-    protected ArrayList<String> products;
+    private String nameCategory;
+    private ArrayList<Product> products;
 
     public Category(String nameCategory) {
         this.nameCategory = nameCategory;
@@ -19,17 +19,13 @@ public class Category {
         this.nameCategory = nameCategory;
     }
 
-    public ArrayList<String> getArrProduct() {
+    public ArrayList<Product> getProducts() {
         return products;
     }
 
-    public void addProducts(String product) {
+    public void addProducts(Product product) {
         this.products.add(product);
     }
 
-    @Override
-    public String toString() {
-        return "Category [nameCategory=" + nameCategory + ", products=" + products + "]";
-    }
 
 }

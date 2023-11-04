@@ -2,7 +2,7 @@ package Java.Java_OOP_Seminar_1.HomeWork;
 
 
 public class Product {
-    protected String nameProduct;
+    private String nameProduct;
     private Double price;
     private Double rating;
     public Product() {
@@ -31,11 +31,6 @@ public class Product {
     }
     public void setRating(Double rating) {
         this.rating = rating;
-    }
-
-    @Override
-    public String toString() {
-        return "Product [nameProduct=" + nameProduct + ", price=" + price + ", rating=" + rating + "]";
     }
 
 }
