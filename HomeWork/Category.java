@@ -4,20 +4,11 @@ import java.util.ArrayList;
 
 public class Category {
     protected String nameCategory;
-    protected ArrayList<String> arrProduct;
-
-    public Category(String nameCategory, ArrayList<String> arrProduct) {
-        this.nameCategory = nameCategory;
-        this.arrProduct = arrProduct;
-    }
+    protected ArrayList<String> products;
 
     public Category(String nameCategory) {
         this.nameCategory = nameCategory;
-
-    }
-
-    public Category() {
-
+        this.products = new ArrayList<>();
     }
 
     public String getNameCategory() {
@@ -29,16 +20,16 @@ public class Category {
     }
 
     public ArrayList<String> getArrProduct() {
-        return arrProduct;
+        return products;
     }
 
-    public void setArrProduct(ArrayList<String> arrProduct) {
-        this.arrProduct = arrProduct;
+    public void addProducts(String product) {
+        this.products.add(product);
     }
 
     @Override
     public String toString() {
-        return "Category [nameCategory=" + nameCategory + ", arrProduct=" + arrProduct + "]";
+        return "Category [nameCategory=" + nameCategory + ", products=" + products + "]";
     }
 
 }

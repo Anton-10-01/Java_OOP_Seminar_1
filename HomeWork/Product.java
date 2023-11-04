@@ -1,6 +1,5 @@
 package Java.Java_OOP_Seminar_1.HomeWork;
 
-import java.util.ArrayList;
 
 public class Product {
     protected String nameProduct;
